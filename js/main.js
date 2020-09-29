@@ -6,3 +6,11 @@ $(document).ready(function(){
         $( ".welcoming_text" ).animate({'margin-bottom': '550px'}, 'slow');
     });
 });
+
+function openNav() {
+    document.querySelector(".nav_opened").style.right = "0px";
+};
+
+function closeNav() {
+    document.querySelector(".nav_opened").style.right = "-1000px";
+};

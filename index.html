@@ -9,21 +9,25 @@
     <link rel="shortcut icon" type="image/png" href="img/logo.png" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/nbd1wtw.css">
+    
 
     <title>Magdalena Polakowska || Portfolio</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1e6b508437.js" crossorigin="anonymous"></script>
 </head>
 
 <body onhashchange="pageChange()">
 
     <nav id="navbar" class="navbar">
         <img class="logo" alt="logo" src="img/logo.png">
+        <button class="menu" onclick="openNav()"><img alt="menu" src="img/menu.png"></button>
         <div class="nav_opened">
-            <a href="#contact_page">CONTACT</a>
+            <button class="close_btn" onclick="closeNav()"><i class="fas fa-times"></i></button>
+            <a href="#home_page">HOME</a>
             <a href="#projects_page">WEBSITES AND APP PROTOTYPES</a>
             <a href="#about_me_page">ABOUT ME</a>
-            <a href="#home_page">HOME</a>
+            <a href="#contact_page">CONTACT</a>
         </div>
         
     </nav>
@@ -79,5 +83,12 @@
     <script src="js/spa.js"></script>
     <!----- Main functionality ----->
     <script src="js/main.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
 </body>
 </html>

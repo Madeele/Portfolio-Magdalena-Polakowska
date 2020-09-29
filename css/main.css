@@ -34,6 +34,7 @@ body {
     background-color: white;
     position: fixed;
     z-index: 2;
+    display: flex;
     -webkit-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
     box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
@@ -41,10 +42,10 @@ body {
 
 .navbar a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     font-weight: 600;
-    margin: auto 40px;
+    margin: 10px auto;
     float: right;
     padding: 15px;
 }
@@ -54,13 +55,38 @@ body {
 }
 
 .nav_opened{
-    display: none;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    transition: 0.5s;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
 }
 
 .logo {
     width: 45px;
     padding: 10px;
 }
+
+.menu {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    margin: auto 25px auto auto;
+    outline: none;
+}
+
+.close_btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    margin: 20px 25px 0 auto;
+    outline: none;
+    font-size: 20px;
+}
+
 /********** HOME WELCOMING TEXT **********/
 .header {
     width: 100%;
@@ -145,4 +171,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /********** PROJECTS GRID ***********/
-
+.projects_grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
