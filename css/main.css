@@ -20,12 +20,26 @@ body {
     /*min heigh is screen heigh minus height of tab and top bar */
     min-height: calc(100vh - 85px);
     background-color: white;
-    padding: 60px 0 0 0;    
+    padding: 60px 0 0 0; 
+    flex-direction: column;   
+    animation: fadeIn 1s;
 }
 
 .page_1 {
     flex-direction: column;
     align-items: center;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+    from {
+      opacity: 0
+    }
+  
+    to {
+      opacity: 1
+    }
 }
 
 /************* NAVIGATION ************/
@@ -53,6 +67,7 @@ body {
 
 .navbar a:hover {
     color: #3F438C;
+    font-weight: 600;
 }
 
 .nav_opened{
@@ -151,6 +166,7 @@ h6 {
     margin: 0;
     font-size: 20px;
     text-align: left;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -167,6 +183,7 @@ h6 {
     bottom: 10%;
     
 }
+
 
 /*********** HOME PROJECTS**********/
 .paint_splash {
@@ -265,6 +282,29 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
 
+/********** ABOUT ME *********/
+.about_me {
+margin-top: 40px;
+}
+
+.experience {
+    margin-top: 200px;
+    font-size: 30px;
+    color: #60628a;
+    margin-bottom: 60px;
+}
+
+.title {
+    margin: 0%;
+    font-size: 30px;
+}
+
+/********** PROJECTS *********/
+
+.projects {
+    margin-top: 40px;
+}
+
 @media only screen and (min-width: 768px) {
 
     h1, h2{
@@ -329,5 +369,55 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         transition-duration: 0.5s;
         cursor: pointer;
+    }
+
+    .timeline {
+        margin-top: 100px;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto 90px auto;
+    }
+  
+  .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+  .left {
+        left: 0;
+    }
+  
+  .right {
+        left: 50%;
+    }
+  
+  .content {
+        padding: 20px 30px;
+        background-color:  #F5F5F5;
+        position: relative;
+        border-radius: 6px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .interests_grid {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 70px auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .interest_photo {
+        width: 100%;
+        height: 500px;
     }
 }
