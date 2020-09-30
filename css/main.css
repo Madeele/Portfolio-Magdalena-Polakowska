@@ -147,6 +147,12 @@ h5 {
     font-weight: 400;
 }
 
+h6 {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
 .welcoming_text {
     width: auto;
     align-self: flex-start;
@@ -168,7 +174,7 @@ h5 {
 }
 .home_projects {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
     -webkit-box-shadow: 0px -6px 5px -1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px -6px 5px -1px rgba(0,0,0,0.15);
@@ -200,6 +206,40 @@ body::-webkit-scrollbar-thumb {
 .project_box {
     width: 100%;
 }
+
+/************PROFESSION***********/
+.home_profession {
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profession_grid {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.profession_box {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
+    box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.15);
+}
+
+
 
 
 @media only screen and (min-width: 768px) {
