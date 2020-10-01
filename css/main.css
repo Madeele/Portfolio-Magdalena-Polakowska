@@ -278,8 +278,8 @@ body::-webkit-scrollbar-thumb {
     width: 400px;
     height: 400px;
     align-self: flex-end;
-    right: 200px;
     position: absolute;
+    right: 10%;
 }
 
 .me_back {
@@ -294,7 +294,7 @@ margin-top: 40px;
 }
 
 .experience {
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 30px;
     color: #60628a;
     margin-bottom: 60px;
@@ -305,11 +305,42 @@ margin-top: 40px;
     font-size: 25px;
 }
 
+.about_more {
+    display: flex;
+    margin: 60px auto 0 auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.text_about_me_2 {
+    font-weight: 200;
+    width: 40%;
+}
+
+.my_photo_2 {
+    width: 500px;
+    height: 500px;
+    align-self: center;
+}
 /********** PROJECTS *********/
 
 .projects {
     margin-top: 40px;
 }
+
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.prototype {
+    margin-top: 60px;
+    display: block;
+    color: #60628a;
+}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -433,48 +464,30 @@ margin-top: 40px;
 /****************** CAROUSEL ****************/
 .wordCarousel {
     font-size: 36px;
-    font-weight: 100;
-    color: black;
+    font-weight: 600;
     overflow: hidden;
     position: relative;
-    height: 65px;
+    height: 70px;
     padding-top: 10px;
-    margin-top: -10px;
+    margin-top: 40px;
+}
+
+.hi {
+    margin-top: 7px;
 }
 
 .wordCarousel li {
-    color: #ccc;
+    color: #60628a;
     font-weight: 700;
     padding: 0 10px;
     height: 45px;
     margin-top: 45px;
     margin-left: 30px;
+    font-size: 60px;
     display: block;
 }
 
-.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 .flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-
-@keyframes flip2 {
-    0% { margin-top: -180px; }
-    5% { margin-top: -90px;  }
-    50% { margin-top: -90px; }
-    55% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}
-
-@keyframes flip3 {
-    0% { margin-top: -270px; }
-    5% { margin-top: -180px; }
-    33% { margin-top: -180px; }
-    38% { margin-top: -90px; }
-    66% { margin-top: -90px; }
-    71% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}
 
 @keyframes flip4 {
     0% { margin-top: -360px; }
@@ -488,4 +501,56 @@ margin-top: 40px;
     99.99% { margin-top: 0px; }
     100% { margin-top: -270px; }
 }
+
+
+/********PROJECTS PAGE*********/
+#projects_page{
+    background-color:#F5F5F5 ;
+}
+.mockup {
+    width: 100%;
+    height: 1000px;
+    background-color:#F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.mockup_container
+{
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background: rgba(0,0,0,0);
+  transform: rotate(-30deg) skew(25deg) scale(.8);
+  transition: 0.5s;
+}
+.mockup_container img
+{
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+.mockup_container:hover img:nth-child(4)
+{
+  transform: translate(160px,-160px);		
+  opacity: .9;
+}
+.mockup_container:hover img:nth-child(3)
+{
+  transform: translate(120px,-120px);		
+  opacity: .8;
+}
+.mockup_container:hover img:nth-child(2)
+{
+  transform: translate(80px,-80px);		
+  opacity: .6;
+}
+.mockup_container:hover img:nth-child(1)
+{
+  transform: translate(40px,-40px);		
+  opacity: .4;
+}
+
+
 
