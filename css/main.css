@@ -282,6 +282,12 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
 
+.me_back {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
 /********** ABOUT ME *********/
 .about_me {
 margin-top: 40px;
@@ -296,7 +302,7 @@ margin-top: 40px;
 
 .title {
     margin: 0%;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /********** PROJECTS *********/
@@ -401,7 +407,7 @@ margin-top: 40px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 200;
         font-family: 'Lato', sans-serif;
     }
@@ -421,3 +427,65 @@ margin-top: 40px;
         height: 500px;
     }
 }
+
+
+
+/****************** CAROUSEL ****************/
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+.wordCarousel li {
+    color: #ccc;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-top: 45px;
+    margin-left: 30px;
+    display: block;
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
