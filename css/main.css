@@ -572,6 +572,7 @@ margin-top: 40px;
         position: relative;
         background-color: inherit;
         width: 50%;
+        margin: 0;
     }
 
   .left {
@@ -715,12 +716,15 @@ margin-top: 40px;
         display: flex;
         margin: 60px auto 0 auto;
         width: 80%;
+        flex-direction: row;
         justify-content: space-between;
     }
     
     .text_about_me_2 {
         font-weight: 200;
         width: 40%;
+        margin: 0;
+        text-align: left;
     }
     
     .my_photo_2 {
