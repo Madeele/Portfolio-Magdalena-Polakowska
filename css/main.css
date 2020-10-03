@@ -336,8 +336,13 @@ margin-top: 40px;
 
 .category {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    margin: 10px;
+    
+}
+
+.category p {
     font-weight: 600;
 }
 
@@ -351,6 +356,92 @@ margin-top: 40px;
     position: absolute;
     color:black;
 }
+
+/****************** CAROUSEL ****************/
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+.hi {
+    margin-top: 7px;
+}
+
+.wordCarousel li {
+    color: #60628a;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-top: 45px;
+    margin-left: 30px;
+    font-size: 60px;
+    display: block;
+}
+
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+
+/********PROJECTS PAGE*********/
+.mockup {
+    width: 100%;
+    height: auto;
+    height: auto;
+    text-align: center;
+    background-color:#F5F5F5;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin: 30px auto 100px auto ;
+}
+.mockup_container
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: rgba(0,0,0,0);
+  margin-top: 100px;
+  margin: auto;
+}
+
+.description {
+    font-weight: 200;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.description h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: rift, sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.mockup_container img
+{
+  width: 100%;
+  margin: auto;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -510,101 +601,55 @@ margin-top: 40px;
     h6 {
         font-size: 20px;
     }
+
+    .mockup {
+        width: 95%;
+        height: auto;
+        text-align: right;
+        background-color:#F5F5F5;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+
+    .mockup_container{
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .mockup_container img{
+        width: 500px;
+    }
+
+    .description h4 {
+        text-align: right;
+        font-size: 40px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        
+    }
+
+    .description {
+        align-self: center;
+        margin-right: 100px;
+    }
+
+    .category {
+        flex-direction: row;
+    }
+
+    .projects {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     
 }
 
 
 
-/****************** CAROUSEL ****************/
-.wordCarousel {
-    font-size: 36px;
-    font-weight: 600;
-    overflow: hidden;
-    position: relative;
-    height: 70px;
-    padding-top: 10px;
-    margin-top: 40px;
-}
 
-.hi {
-    margin-top: 7px;
-}
-
-.wordCarousel li {
-    color: #60628a;
-    font-weight: 700;
-    padding: 0 10px;
-    height: 45px;
-    margin-top: 45px;
-    margin-left: 30px;
-    font-size: 60px;
-    display: block;
-}
-
-.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-
-@keyframes flip4 {
-    0% { margin-top: -360px; }
-    5% { margin-top: -270px; }
-    25% { margin-top: -270px; }
-    30% { margin-top: -180px; }
-    50% { margin-top: -180px; }
-    55% { margin-top: -90px; }
-    75% { margin-top: -90px; }
-    80% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
-}
-
-
-/********PROJECTS PAGE*********/
-#projects_page{
-    background-color:#F5F5F5 ;
-}
-.mockup {
-    width: 100%;
-    height: 1000px;
-    background-color:#F5F5F5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-.mockup_container
-{
-  position: relative;
-  width: 360px;
-  height: 640px;
-  background: rgba(0,0,0,0);
-  transform: rotate(-30deg) skew(25deg) scale(.8);
-  transition: 0.5s;
-}
-.mockup_container img
-{
-  position: absolute;
-  width: 100%;
-  transition: 0.5s;
-}
-.mockup_container:hover img:nth-child(4)
-{
-  transform: translate(160px,-160px);		
-  opacity: .9;
-}
-.mockup_container:hover img:nth-child(3)
-{
-  transform: translate(120px,-120px);		
-  opacity: .8;
-}
-.mockup_container:hover img:nth-child(2)
-{
-  transform: translate(80px,-80px);		
-  opacity: .6;
-}
-.mockup_container:hover img:nth-child(1)
-{
-  transform: translate(40px,-40px);		
-  opacity: .4;
-}
 
 
 
