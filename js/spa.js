@@ -2,12 +2,14 @@
 
 // page change funcionality
 function pageChange() {
-    let page = "home_page";
-    if (location.hash) {
-      page = location.hash.slice(1);
-    }
-  
-    showPage(page);
+  let page = "home_page";
+  if (location.hash) {
+    page = location.hash.slice(1);
+  }
+
+  window.scrollTo(0,0);
+
+  showPage(page);
 }
   
 pageChange();
