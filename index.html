@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check my portfolio and let's get into collaboration!">
+    <meta name="author" content="Magdalena Polakowska">
+
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nbd1wtw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
+
+    <title>Magdalena Polakowska || Portfolio</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1e6b508437.js" crossorigin="anonymous"></script>
+</head>
+
+<body onhashchange="pageChange()">
+
+    <nav id="navbar" class="navbar">
+        <img class="logo" alt="logo" src="img/logo.png">
+        <button class="menu" onclick="openNav()"><img alt="menu" src="img/menu.png"></button>
+        <div class="nav_opened">
+            <button class="close_btn" onclick="closeNav()"><i class="fas fa-times"></i></button>
+            <a href="#home_page">HOME</a>
+            <a href="#projects_page">WEBSITES AND APP PROTOTYPES</a>
+            <a href="#about_me_page">ABOUT ME</a>
+            <img class="nav_logo" alt="logo" src="img/logo.png">
+        </div>
+        
+    </nav>
+
+    <!--------------Home section------------->
+    <section id="home_page" class="page page_1">
+        <div class="header">
+            <div class="welcoming_text">
+                <div class="comma">
+                    <h2>HELLO</h2>
+                    <img class="comma_img" alt="comma" src="img/comma.png">
+                </div>
+                <h2>MY NAME IS</h2>
+                <h1>MAGDALENA</h1>
+            </div>
+            <div class="roles_text">
+                <div class="visual">
+                    <h4 class="role">Visual designer</h4>
+                    <h4 class="role">Interaction designer</h4>
+                    <h4 class="role">front-end developer</h4>
+                    <h4 class="role"><b>based in aarhus</b></h4>
+                </div> 
+            </div>
+        </div>
+        <div class="home_projects">
+            <h3>MY PROJECTS</h3>
+            <h5>These are some of my latest projects:</h5>
+            <div class="projects_grid">
+                <a href="#salvatio_detail_page" class="project_link"><img class="project_box" alt="project" src="img/IphoneMockup.png"></a>
+                <a href="#travelday_detail_page" class="project_link" ><img class="project_box" alt="project" src="img/project1.png"></a>
+                <a href="#2gather_detail_page" class="project_link" ><img class="project_box" alt="project" src="img/2gather.png"></a>
+                <a href="#dorte_detail_page" class="project_link" ><img class="project_box" alt="project" src="img/dorte.png"></a>
+            </div>
+            <img class="paint_splash" alt="Paint splash" src="img/splash.png">
+
+        </div>
+
+        <div class="home_profession">
+            <h3>what I am doing as a ...</h3>
+            <div class="profession_grid">
+                <div class="profession_box"> 
+                    <h4>Visual designer</h4>
+                    <h6>∙ Graphics and art </h6>
+                    <h6> ∙ Color palettes</h6>
+                    <h6> ∙ Cconography</h6>
+                    <h6> ∙ Typography</h6>
+                </div>
+                <div class="profession_box"> 
+                    <h4>Interaction designer</h4>
+                    <h6>∙ Wireframes</h6>
+                    <h6> ∙ Mockups</h6>
+                    <h6> ∙ Experience design</h6>
+                    <h6> ∙ UI accessibility</h6>
+                    <h6>∙ Interaction modeling</h6>
+                </div>
+                <div class="profession_box">
+                    <h4>front-end developer</h4>
+                    <h6>∙ Code to implement designs</h6>
+                    <h6> ∙ Development languages</h6>
+                    <h6> ∙ Coded accessibility</h6>
+                    <h6> ∙ Functionality and integration</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_about">
+            <h3 class="home_about_text">about me</h3>
+            <img src="img/me.png" class="my_photo" alt= "me" >
+            <h6 class="text_about_me">My name is <b>Magdalena Polakowska</b>.
+                I am a student of Business Academy in Aarhus on Multimedia Design program.<br>
+                <br>
+                
+                Lately I fell in love with <b>coding and UI/UX</b>, so I’m spending hours on exploring 
+                these fields and getting skills needed to become the best <b>Multimedia Designer</b>. I truly believe in 'Learning by Doing' approach, that's why I'm trying new things and practicing for whole days.<br><br>
+                
+                My friends are really often laughing, that for me there is no 'free time' as I find pleasure in creating new projects even after working hours. And I have to admit - it's true. <br><br>
+                If you'd like to know me better, please check <a href="#about_me_page"><b>'About me'</b></a> section.
+            </h6>
+        </div>
+    </section>
+
+
+    <!--------------About me section------------->
+    <section id="about_me_page" class="page">
+        <div class="about_me">
+            <img src="img/me_back.jpg" class="me_back" alt= "me" >
+            <h3 class="wordCarousel">    
+                <span class="hi">Hi, I'm </span>  
+                <div> 
+                    <ul class="flip4"> 
+                        <li>OPEN-MINDED</li>
+                        <li>CREATIVE</li>
+                        <li>MAGDALENA</li> 
+                    </ul>
+                </div>  
+            </h3>
+            <div class="about_more">
+            <h6 class="text_about_me_2">My name is <b>Magdalena Polakowska</b>.
+                I am a student on Business Academy Aarhus on Multimedia Design program.<br>
+                <br>
+                
+                Lately, I fell in love with <b>coding and UI/UX</b>, so I’m spending hours exploring 
+                these fields and getting skills needed to become the best <b>Multimedia Designer</b>. I truly believe in the 'Learning by Doing' approach, that's why I'm trying new things and practicing for whole days.<br><br>
+                
+                My friends are really often laughing, that for me there is no 'free time' as I find pleasure in creating new projects even after working hours. And I have to admit - it's true.<br><br>
+                If you would ask me 'what kind of person am I?' or 'what is the most important for me in my life?' I would proudly say, that I'm open-minded and focused on emotional part of my life. I love conversations and travels but I'm not going with the flow and following the crowd.<br><br> Approach and feelings stands for me on the first place always. Maybe that's why I keep on being authentic as a person and artist.
+            </h6>
+            <img src="img/me4.jpg" class="my_photo_2" alt= "me" >
+        </div>
+
+            <h3 class="experience">my experience and education</h3>
+            <div class="timeline">
+                <div class="container left">
+                  <div class="content">
+                        <h3 class="title">now <br> business academy aarhus</h3>
+                        <p>I'm a student at Business Academy Aarhus on the AP Multimedia Design program.</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                        <h3 class="title">2020 <br>Internship</h3>
+                        <p>I had a 4 months collaboration with <b>Salvatio Push start-up company</b>. It was a position of Multimedia Designer so I was responsible for creating Prototype of Salvatio Push App, graphics and presentations for investors. I also handled Salvatio Push Instagram account.</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="content">
+                        <h3 class="title">2014 - 2018 <br>art highschool in Warsaw</h3>
+                        <p>I graduaded from 'Zespól Panstwowych Szkól Plastycznych im. Wojciecha Gersona w Warszawie' with a proffesional diploma of an <b>Artist with Graphic Design specialization</b>. <br><br> I also got to learn Sculpture, History of Art, Photography and Cinematography, Painting and 3D art.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <h3 class="experience">my paintings, illustrations and photos</h3>
+        <div class="interests_grid">
+            <img class="interest_photo" src="img/paint.jpg" alt="interest">
+            <img class="interest_photo" src="img/pain3.jpg" alt="interest">
+            <img class="interest_photo" src="img/paint4.jpg" alt="interest">
+            <img class="interest_photo" src="img/paint2.jpg" alt="interest">
+        </div>
+        <div class="interests_grid">
+            <img class="interest_photo" src="img/photo1.jpg" alt="interest">
+            <img class="interest_photo" src="img/photo2.jpg" alt="interest">
+            <img class="interest_photo" src="img/photo3.jpg" alt="interest">
+            <img class="interest_photo" src="img/photo4.jpg" alt="interest">
+        </div>
+        
+    </section>
+
+    <!--------------Projects section------------->
+    <section id="projects_page" class="page">
+        <div class="projects">
+            <h3>MY Projects</h3>
+            <div class="mockup">
+                <div class="mockup_container">
+                    <img src="img/IphoneMockup.png">
+                </div>
+                <div class="description">
+                    <a href="#salvatio_detail_page"><h4>Salvatio Push app Prototype </h4></a>
+                    <p>Prototype created in collaboration with <a href="https://wojo3214.github.io/portfolio2/" class="wojtek">Wojciech Dzwonczyk</a>, while having an Internship in Salvatio Push company. As a goal, we set creating a solution that will be a perfect support for Salvatio Push device, the main company's product.</p>
+                    <div class="category">
+                        <p class="category">Role: UI Designer, UX Designer</p>
+                        <p class="category">Program: Adobe XD</p>
+                    </div>
+                    <a href="https://xd.adobe.com/view/08405e48-2fed-4b6b-bd4d-55442e61abd7-5d13/?hints=off" class="prototype">Explore the Prototype</a>
+    
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_container">
+                    <img src="img/2gather.png">
+                </div>
+                <div class="description">
+                    <h4>2Gather</h4>
+                    <p>Web App created as a group school Exam Project for the company that we come up with. It's a solution just for mobile phones where we used Firebase and Mail/Facebook authentication. </p>
+                    <div class="category">
+                        <p class="category">Role: UI Designer, UX Designer, Front-end Developer</p>
+                        <p class="category">Program: Illustrator, Adobe XD, Visual Studio Code, Github, GitKraken</p>
+                    </div>
+                    <a href="https://danielberger1995.github.io/2_GATHER/" class="prototype">Explore the Website</a>
+    
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_container">
+                    <img src="img/dorte.png">
+                </div>
+                <div class="description">
+                    <h4>Study Counseling BAAA</h4>
+                    <p>Website solution created for Study Coundeling at BAAA. Project had its focus on UX and SoMe.</p>
+                    <div class="category">
+                        <p class="category">Role: UI Designer, UX Designer, Front-end Developer</p>
+                        <p class="category">Program: Adobe XD, Visual Studio Code, Github, GitKraken</p>
+                    </div>
+                    <a href="https://madeele.github.io/DorteStudyCounseling/" class="prototype">Explore the Website</a>
+    
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_container">
+                    <img src="img/plantly.png">
+                </div>
+                <div class="description">
+                    <h4>Plantly</h4>
+                    <p>Private project of an App, that helps you remeber about watering your plants at home. I mostly focused on creating great amount of animations and original design for this project.</p>
+                    <div class="category">
+                        <p class="category">Role: UI Designer, UX Designer</p>
+                        <p class="category">Program: Adobe XD</p>
+                    </div>
+                    <a href="https://xd.adobe.com/view/08405e48-2fed-4b6b-bd4d-55442e61abd7-5d13/?hints=off" class="prototype">Explore the Prototype</a>
+    
+                </div>
+            </div>
+
+            <div class="mockup">
+                <div class="mockup_container">
+                    <img src="img/project1.png">
+                </div>
+                <div class="description">
+                    <h4>Travelday</h4>
+                    <p>Prototype and website created for Travelday company</p>
+                    <div class="category">
+                        <p class="category">Role: UI Designer, UX Designer, Front-end Developer</p>
+                        <p class="category">Program: Adobe XD, Visual Studio Code, Github, GitKraken</p>
+                    </div>
+                    <a href="https://wojo3214.github.io/TraveldayIMPROVED/" class="prototype">Explore the Website</a>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------About me section------------->
+    <section id="salvatio_detail_page" class="page">
+        <div class="details_page">
+            <img src="img/salvatiologo.png" class="salvatiologo">
+            <h4>Salvatio Push app Prototype </h4>
+            <p class="details_text">Prototype created in collaboration with <a href="https://wojo3214.github.io/portfolio2/" class="wojtek">Wojciech Dzwonczyk</a>, while having an Internship in Salvatio Push company. As a goal, we set creating a solution that will be a perfect support for Salvatio Push device, the main company's product.</p>
+            <div class="category details_category">
+                <p class="category"><b>Role: UI Designer, UX Designer</b></p>
+                <p class="category"><b>Program: Adobe XD</b></p>
+            </div>
+            <p class="details_text"><b>Problem statement:</b></p>
+            <p class="problem">Salvatio Push start-up created a device that saves people lifes by sending messages with help request in case of danger. Just with one button click every person can be sure, that someone will come and give help if needed. <br><br> The problem was, that to have the device fully working, Salvatio Push also needed an app that will be the easiest thing to use by all the customers. It has a basic design but it wasn't adjusted for the target group and it was missing a lot of funcionalities:<br><br> - Notifications in the app<br>
+                - Settings<br>
+                - Profile page<br>
+                - Map with potential needy people<br><br>
+            There was also a huge lack of information of how the app works and what are the rules of payments, which is a basic for the client to understand, before using the App.</p>
+            <p class="details_text"><b>What we created as a final solution: </b></p>
+            <div class="mockup_photos">
+                <img src="img/salvatio1.png" class="mockup_row">
+                <img src="img/salvatio2.png" class="mockup_row">
+                <img src="img/salvatio3.png" class="mockup_row">
+            </div>
+            <a href="https://xd.adobe.com/view/08405e48-2fed-4b6b-bd4d-55442e61abd7-5d13/?hints=off" class="details_prototype">Explore the Prototype</a>
+            <p class="details_text"><b>PROCESS </b></p>
+            <p class="details_text"><b>Before creating every project final solution, I'm making a full desk and field research. As I focus on design and web development fields in my portfolio, I'm not attaching this parts of the process down below.</b>
+            </p>
+            <p class="details_text">Salvatio Push start-up had it own logo before I joined the team, that set the color palette for me for the whole prototype creating process. I started with making a <b>Style-tile</b>, so CEO could see and agree on what to do further  and what steps I'll take soon. I took the blue color from logo as a main one and created a gradiend to give it some more depth.<br><br>To fill the design with some additional color, I decided on grey tone for boxes in the App.
+            </p>
+            <img src="img/salvatio-style.png" class="mockup_center">
+            <p class="details_text">In the beggining I got some screens of the App that previous designer created, but I found it to crowdy and full of elements that makes it unreadable. Colors were pourly chosen for the background as well as for some elements.<br><br> My main thought was that the interface of the App has to be as easy as for the child, because of the <b>main target group - eldery people and women</b>. When Wojciech joined the project, we agreed on using some icons and making the app more visual and intuitive. I was resposible for creating for example an introduction with instructions of how to use the app, statistics page for making users more involved in using the app.
+            </p>
+            <div class="mockup_photos">
+                <img src="img/statistics.png" class="mockup_row">
+                <img src="img/intro.png" class="mockup_row">
+                <img src="img/intro2.png" class="mockup_row">
+                <img src="img/intro3.png" class="mockup_row">
+            </div>
+            <p class="details_text"><b>Whole mockup that we created in Adobe XD: </b></p>
+            <img src="img/sa_mockup.png" class="mockup_center">
+            <p class="details_text">As I also create a lot of graphics, I was asked to make a design for packages, Instagram posts and insturctions for the device that will fit the whole App style. I love challenges that's why I set myself a goal to create a visual identity for Salvatio Push through their SoMe, App, Packages, Instructions and Investors presentations.
+            </p>
+            <div class="mockup_photos">
+                <img src="img/Packages_front.jpg" class="mockup_row">
+                <img src="img/Packages_back.jpg" class="mockup_row">
+            </div>
+            <div class="mockup_photos">
+                <img src="img/Salvatio welcoming card.jpg" class="mockup_row">
+                <img src="img/Salvatio welcoming card instruction.jpg" class="mockup_row">
+            </div>
+        </div>
+    </section>
+    
+    <!----- SPA functionality ----->
+    <script src="js/spa.js"></script>
+    <!----- Main functionality ----->
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
